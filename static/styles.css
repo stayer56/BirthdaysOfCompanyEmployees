@@ -1,0 +1,122 @@
+/* Основные стили */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;  /* Светло-серый фон */
+    color: #333;  /* Основной цвет текста */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;  /* Белый фон контейнера */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для логотипа */
+.logo {
+    max-width: 150px;  /* Уменьшаем размер логотипа */
+    height: auto;      /* Сохраняем пропорции */
+    margin-bottom: 20px;
+}
+
+/* Стили для заголовка */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #003366;  /* Темно-синий цвет */
+    margin-bottom: 20px;
+}
+
+/* Стили для заголовков месяцев */
+.month-header {
+    background-color: rgb(254, 206, 73) !important;  /* Яркий желтый цвет */
+    color: #333 !important;  /* Темный текст для контраста */
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* Стили для таблицы */
+.table {
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #003366;  /* Темно-синий фон */
+    color: white;  /* Белый текст */
+    padding: 12px;
+}
+
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 51, 102, 0.05);  /* Светло-синий фон для четных строк */
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 51, 102, 0.1);  /* Подсветка при наведении */
+}
+
+/* Стили для кнопок (если будут добавлены) */
+.btn-primary {
+    background-color: #ff8c42;  /* Оранжевый цвет */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #e67e3a;  /* Темнее оранжевый при наведении */
+}
+
+/* Стили для уведомления */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #003366;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Стили для кнопки "Удалить" */
+.btn-danger {
+    background-color: #003366;  /* Темно-синий цвет */
+    border: none;
+    color: white;  /* Белый текст */
+}
+
+.btn-danger:hover {
+    background-color: #002244;  /* Темнее синий при наведении */
+}
