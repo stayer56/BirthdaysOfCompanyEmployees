@@ -38,5 +38,5 @@ def delete_birthday(id):
     return jsonify({"message": "Запись удалена"})
 
 if __name__ == '__main__':
-    #В данном примере программа запустится на localhost по стандартному порту 5000
+    # В данном примере программа запустится на localhost по стандартному порту 5000
     app.run(host='localhost', port=5000, debug=True)
